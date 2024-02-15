@@ -1,0 +1,21 @@
+{
+    "name": "epam/developmentgraphql",
+    "description": "Add GraphQl request to Epam Development module functionality",
+    "require": {
+        "magento/module-graph-ql": "100.4.*",
+        "epam/development": "*"
+    },
+    "type": "magento2-module",
+    "license": [
+        "Proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Epam\\DevelopmentGraphQl\\": ""
+        }
+    },
+    "version": "1.0.0"
+}

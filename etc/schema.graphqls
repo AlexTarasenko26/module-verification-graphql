@@ -1,0 +1,14 @@
+type Query {
+    getOrderVerification(input: IntInput): String
+    @resolver(class: "Epam\\DevelopmentGraphQl\\Model\\Resolver\\GetOrderVerification")
+    @doc(description: "Find verification status of the specified order")
+    @cache(cacheIdentity: "Epam\\DevelopmentGraphQl\\Model\\Resolver\\Identity")
+}
+
+input IntInput @doc(description: "Order id for verification") {
+ entity_id: Int
+}
+
+type String @doc(description: "Verification status of the order") {
+ verification: String
+}
