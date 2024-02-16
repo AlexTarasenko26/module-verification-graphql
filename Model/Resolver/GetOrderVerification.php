@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Epam\DevelopmentGraphQl\Model\Resolver;
+namespace Epam\VerificationGraphQl\Model\Resolver;
 
 use Magento\Framework\GraphQl\Config\Element\Field;
 use Magento\Framework\GraphQl\Exception\GraphQlInputException;
 use Magento\Framework\GraphQl\Query\ResolverInterface;
 use Magento\Framework\GraphQl\Schema\Type\ResolveInfo;
-use Epam\Development\Api\OrderVerificationManagementInterface;
+use Epam\Verification\Api\OrderVerificationManagementInterface;
 
 class GetOrderVerification implements ResolverInterface
 {

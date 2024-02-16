@@ -1,7 +1,7 @@
 <?php
 declare (strict_types=1);
 
-namespace Epam\DevelopmentGraphQl\Model\Resolver;
+namespace Epam\VerificationGraphQl\Model\Resolver;
 
 use Magento\Framework\GraphQl\Query\Resolver\IdentityInterface;
 
@@ -9,7 +9,7 @@ class Identity implements IdentityInterface
 {
 
     /** @var string */
-    private $cacheTag = "development_order_verification";
+    private $cacheTag = "order_verification";
 
     /**
      * @param array $resolvedData

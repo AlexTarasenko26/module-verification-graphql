@@ -1,4 +1,4 @@
-## _Epam_DevelopmentGraphQl_
+## _Epam_VerificationGraphQl_
 
 Feature list:
 

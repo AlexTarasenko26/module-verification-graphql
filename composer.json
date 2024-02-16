@@ -1,9 +1,9 @@
 {
-    "name": "epam/developmentgraphql",
-    "description": "Add GraphQl request to Epam Development module functionality",
+    "name": "epam/verificationgraphql",
+    "description": "Add GraphQl request to Epam Verification module functionality",
     "require": {
         "magento/module-graph-ql": "100.4.*",
-        "epam/development": "*"
+        "epam/verification": "*"
     },
     "type": "magento2-module",
     "license": [
@@ -14,7 +14,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Epam\\DevelopmentGraphQl\\": ""
+            "Epam\\VerificationGraphQl\\": ""
         }
     },
     "version": "1.0.0"

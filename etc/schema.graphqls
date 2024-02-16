@@ -1,8 +1,8 @@
 type Query {
     getOrderVerification(input: IntInput): String
-    @resolver(class: "Epam\\DevelopmentGraphQl\\Model\\Resolver\\GetOrderVerification")
+    @resolver(class: "Epam\\VerificationGraphQl\\Model\\Resolver\\GetOrderVerification")
     @doc(description: "Find verification status of the specified order")
-    @cache(cacheIdentity: "Epam\\DevelopmentGraphQl\\Model\\Resolver\\Identity")
+    @cache(cacheIdentity: "Epam\\VerificationGraphQl\\Model\\Resolver\\Identity")
 }
 
 input IntInput @doc(description: "Order id for verification") {
