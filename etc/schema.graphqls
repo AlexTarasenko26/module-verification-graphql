@@ -5,10 +5,28 @@ type Query {
     @cache(cacheIdentity: "Epam\\VerificationGraphQl\\Model\\Resolver\\Identity")
 }
 
+type Mutation {
+    setOrderVerification(input: OrderInput!): JSON
+    @resolver(class: "Epam\\VerificationGraphQl\\Model\\Resolver\\SetOrderVerification")
+    @doc(description: "Set verification status of the specified order")
+}
+
+input OrderInput @doc(description: "Order id and verification status") {
+    entity_id: Int
+    require_verification: Int
+}
+
+type JSON @doc(description: "Contains information for updated order") {
+    success: Boolean
+    message: String
+}
+
 input IntInput @doc(description: "Order id for verification") {
- entity_id: Int
+    entity_id: Int
 }
 
 type String @doc(description: "Verification status of the order") {
- verification: String
+    verification: String
 }
+
+
